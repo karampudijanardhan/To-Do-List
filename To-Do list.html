@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: violet;
+        }
+        .list{
+            border: 2px solid #fff;
+            width: 500px;
+            padding: 20px 50px 100px;
+            background-color: #fff;
+        }
+        .list h2{
+        position: relative;
+        right: 30px;
+        padding-bottom: 20px;
+        }
+        .list input{
+            position: relative;
+            width: 290px;
+            height: 42px;
+            right: 30px;
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: 400;
+            background-color: aliceblue;
+            border: 2px solid #fff;
+            border-radius: 20px;
+        }
+        .list button{
+            position: relative;
+            width: 100px;
+            height: 40px;
+            border: 2px solid orangered;
+            border-radius: 20px;
+            background-color: orangered;
+            font-size: 1.1rem;
+            font-weight: 400;
+            right: 70px;
+        }
+        .list li{
+           position: relative; 
+           list-style: circle;
+           right: 0px;
+           top: 50px;
+           font-size: 1.2rem;
+           font-weight: 400;
+           padding-top: 0px;
+           padding-bottom: 15px;
+        }
+        .list span{
+            position: absolute;
+            left: 300px;
+            padding-bottom: 10px;
+        }
+        .list span:hover{
+            width: 15px;
+            height: 19px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <h2>To-Do List</h2>
+        <input type="text" placeholder="Add your task" id="test">
+        <button type="button" onclick="add()">Add</button>
+        <ul id="contener">
+        
+        </ul>
+    </div>
+    <script src="list.js"></script>
+</body>
+</html>
